@@ -1,3 +1,5 @@
+name: Release NPM Package
+
 on:
   create:
     tags:
@@ -24,5 +26,5 @@ jobs:
 
     - name: Upload to NPM Registry
       run: |
-        npm config set //registry.npmjs.org/:_authToken=$NPM_PUBLISH_KEY
+        npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_PUBLISH_KEY }}
         npm publish
