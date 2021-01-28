@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-indexyz",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Personal ESLint config",
   "repository": "https://github.com/Indexyz/eslint-config-indexyz.git",
   "author": "Indexyz <indexyz@pm.me>",
