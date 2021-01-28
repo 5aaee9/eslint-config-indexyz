@@ -1,12 +1,14 @@
 'use strict'
 
-const ts = require('./typescript')
+const rules = require('./typescript')
 
-ts.extends = [ ...ts.extends, 'plugin:vue/recommended' ]
-ts.plugins = [ ...ts.plugins, 'vue' ]
-ts.rules = {
+rules.parser = 'vue-eslint-parser'
+rules.parserOptions.parser = '@typescript-eslint/parser'
+rules.extends = [ ...ts.extends, 'plugin:vue/recommended' ]
+rules.plugins = [ ...ts.plugins, 'vue' ]
+rules.rules = {
     ...ts.rules,
     ...require('./rules/vue'),
 }
 
-module.exports = ts
+module.exports = rules
