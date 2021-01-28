@@ -8,7 +8,8 @@
   "files": [
     "rules",
     "node.js",
-    "typescript.js"
+    "typescript.js",
+    "vue.js"
   ],
   "scripts": {
     "lint": "eslint -c node.js --fix --ext .js,.ts ."
